@@ -18,8 +18,8 @@ authRouter.post("/register", async (req, res) => {
       password: hashedPassword,
       email,
     });
-    delete newUser.password;
-    res.status(201).json(newUser);
+    const  { _, ...userWithoutPassword } = newUser;
+    res.status(201).json(userWithoutPassword);
   } catch (error) {
     res.json({ error: error.message });
   }
