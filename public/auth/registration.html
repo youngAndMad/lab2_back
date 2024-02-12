@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <head>
+    <lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Signup</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="password"
+            required
+          />
+        </div>
+        <button type="submit" class="submit-btn">Registration</button>
+      </form>
+      <p>Already have account? <a href="/auth/login.html">Login</a></p>
+    </div>
+    <h4 class="bottom-text">Your full name there. Your group</h4>
+  </body>
+  <script src="../assets/js/auth.js"></script>
+</html>
